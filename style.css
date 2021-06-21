@@ -21,22 +21,19 @@ body {
 #teclado {
     display: grid;
 
-    grid-template-columns: repeat(3, 90px);
-    grid-template-rows: repeat(3, 70px);
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: 40px 40px 40px 40px 40px;
 
     justify-items: center;
     align-items: center;
 
     margin-left: 30px;
-    height: 320px;
+    padding: 20px;
+    height: 280px;
     background-color: #403a3a;
 
-    grid-template-areas:
-      "n1 n2 n3"
-      "n4 n5 n6"
-      "n7 n8 n9"
-      ". n0 ."
-      "br cr cf";
+
 }
 
 .nums {
@@ -51,18 +48,10 @@ body {
     
 }
 
-.num0 {
-    grid-area: n0;
-}
-.numBr {
-    grid-area: br;
-}
-.numCor {
-    grid-area: cr;
-}
-.numCon {
-    grid-area: cf;
-}
+.num0 {grid-area: 4/2/5/3;} 
+.numBr {grid-area: 5/1/6/2;}
+.numCor {grid-area: 5/2/6/3;}
+.numCon {grid-area: 5/3/6/4;}
 
 .nums:hover {
     cursor: pointer;
