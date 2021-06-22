@@ -3,6 +3,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 #urna {
@@ -15,7 +17,10 @@ body {
 #tela {
     width: 500px;
     height: 320px;
-    background: linear-gradient(to right, #e8e8e8, #c1c1c1);  
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    display: flex;
+    flex-direction: column; 
+    border: solid 2px black;
 }
 
 #teclado {
@@ -28,12 +33,11 @@ body {
     justify-items: center;
     align-items: center;
 
+    border: solid 2px black;
     margin-left: 30px;
     padding: 20px;
     height: 280px;
     background-color: #403a3a;
-
-
 }
 
 .nums {
@@ -45,16 +49,114 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    
+    box-shadow: rgb(0, 0, 0) 1px 1px 2px;
 }
 
 .num0 {grid-area: 4/2/5/3;} 
-.numBr {grid-area: 5/1/6/2;}
-.numCor {grid-area: 5/2/6/3;}
-.numCon {grid-area: 5/3/6/4;}
+.numBr {
+    grid-area: 5/1/6/2;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Benne', serif;
+    margin-top: 10px;
+    width: 80px;
+}
+.numCor {
+    grid-area: 5/2/6/3;
+    background-color: rgb(223, 87, 38);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Benne', serif;
+    margin-top: 10px;
+    width: 80px;
+}
+
+.numCon {
+    grid-area: 5/3/6/4;
+    background-color: rgb(76, 182, 76);
+    color: black;
+    font-size: 14px;
+    width: 80px;
+    height: 50px;
+    font-weight: bold;
+    font-family: 'Benne', serif;
+}
 
 .nums:hover {
     cursor: pointer;
     background-color: grey;
+    box-shadow: grey 1px 1px 2px;
     transition: ease 0.4s;
+}
+
+.numCor:hover {
+    background-color: rgba(223, 87, 38, 0.576);
+    box-shadow: rgba(223, 87, 38, 0.576) 1px 1px 2px;
+}
+
+.numCon:hover {
+    background-color: rgba(76, 182, 76, 0.659);
+    box-shadow: rgba(76, 182, 76, 0.659) 1px 1px 2px;
+}
+
+.screen {
+    flex-grow: 1;
+    display: flex;
+}
+
+.screen-left {
+    flex-grow: 1;
+}
+
+.screen-right {
+    width: 90px;
+    border-left: solid 2px black;
+}
+
+.info {
+    border-top: solid 2px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 10px;
+    line-height: 20px;
+}
+
+.left-infos {
+    height: 40px;
+    padding-left: 10px;
+}
+
+.text {
+    line-height: 50px;
+}
+
+.role {
+    text-align: center;
+}
+
+.code {
+    width: 300px;
+    display: flex;
+    text-align: center;
+}
+
+.code-name {
+    width: 60px;
+}
+
+.code-number {
+    border: solid 1px black;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.geral-infos  {
+    padding-left: 10px;
+    line-height: 40px;
 }
