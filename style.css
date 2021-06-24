@@ -26,9 +26,7 @@ body {
 #teclado {
     display: grid;
 
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 70px);
-    grid-template-rows: 40px 40px 40px 40px 40px;
+    grid-gap: 0px;
 
     justify-items: center;
     align-items: center;
@@ -60,8 +58,9 @@ body {
     font-size: 15px;
     font-weight: bold;
     font-family: 'Benne', serif;
-    margin-top: 10px;
     width: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 .numCor {
     grid-area: 5/2/6/3;
@@ -70,8 +69,10 @@ body {
     font-size: 15px;
     font-weight: bold;
     font-family: 'Benne', serif;
-    margin-top: 10px;
     width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .numCon {
@@ -83,6 +84,7 @@ body {
     height: 50px;
     font-weight: bold;
     font-family: 'Benne', serif;
+    margin-left: 10px;
 }
 
 .nums:hover {
@@ -136,13 +138,16 @@ body {
 }
 
 .role {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .code {
     width: 300px;
     display: flex;
     text-align: center;
+    padding-top: 20px;
 }
 
 .code-name {
@@ -161,12 +166,14 @@ body {
 .geral-infos  {
     padding-left: 10px;
     line-height: 40px;
+    padding-top: 10px;
 }
 
 .image {
     border-bottom: solid 2px black;
     border-left: solid 2px black;
     background-color: white;
+    text-align: center;
 }
 
 .image img {
@@ -176,4 +183,26 @@ body {
 .small {
     font-size: 12px;
     width: 90%;
+}
+
+.blink {
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    25% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    75% {
+        opacity: 0.2;
+    }
+    
+    100% {
+        opacity: 1.0;
+    }
 }
