@@ -1,0 +1,6 @@
+let textSVP = document.querySelector('.text span')
+let role = document.querySelector('.role span')
+let infos = document.querySelector('.geral-infos')
+let instrucoes = document.querySelector('.info')
+let images = document.querySelector('.screen-right')
+let numero = document.querySelector('.code')
