@@ -11,12 +11,12 @@ let partes = [{
     },
     {
         cargo: 'PRESIDENTE', digitos: 2, candidatos: [{
-            nome: 'Nicolas S.', numero: '66', partido: 'MTL', vice: 'Cesar S.', fotos: [{
-                url: '66.jpg', legenda: 'Presidente'},{url: '66_2.jpg', legenda: 'Vice-Presidente', small: true
+            nome: 'Nicolas S.', numero: '66', partido: 'MTL', vice: 'Enesi S.', fotos: [{
+                url: '66.jpg', alt: 'Presidente'},{url: '66_2.jpg', alt: 'Vice-Presidente', small: true
             }]
         },{
-            nome: 'Vitor H.', numero: '21', partido: 'VLN', vice: 'Adalto H.', fotos : [{
-                url: '21.jpg', legenda: 'Presidente'},{url: '21_2.jpg', legenda: 'Vice-Presidente', small: true
+            nome: 'Vitor H.', numero: '21', partido: 'VLN', vice: 'Adalto R.', fotos : [{
+                url: '21.jpg', alt: 'Presidente'},{url: '21_2.jpg', alt: 'Vice-Presidente', small: true
             }]
         }]
     }

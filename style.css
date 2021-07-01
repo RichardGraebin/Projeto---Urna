@@ -153,6 +153,7 @@ body {
 
 .code-name {
     width: 60px;
+    padding-right: 15px;
 }
 
 .code-number {
@@ -188,6 +189,23 @@ body {
 
 .blink {
     animation: blink 2s infinite;
+}
+
+.warning {
+    width: 410px;
+    font-size: 35px;
+    font-style: bold;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.end-warning {
+    font-size: 70px;
+    font-weight: bold;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes blink {
