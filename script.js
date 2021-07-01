@@ -27,8 +27,8 @@ function start() {
     role.innerHTML = parte.cargo
     textSVP.style.display = 'none'
     instrucoes.style.display = 'none'
-    infos.style.display = 'none' 
-    images.style.display = 'none'
+    infos.innerHTML = ''
+    images.innerHTML = ''
     numero.innerHTML = qntDigitos
 }
 
@@ -42,7 +42,18 @@ function refresh_page() {
         }
     })
 
-    console.log('Candidato', candidato)
+    if(candidato.length > 0) {
+        candidatoAtual = candidato[0]
+        textSVP.style.display = 'block'
+        instrucoes.style.display = 'block'
+        infos.innerHTML = `Nome: ${candidatoAtual.nome}</br>Partido: ${candidatoAtual.partido}`
+        
+        let fotosHTML = ''
+        for(let i in candidatoAtual.fotos) {
+            fotosHTML += `<div class='image'><img src="/images/${candidatoAtual.fotos[i].url}" alt="role 1">${candidatoAtual.fotos[i].alt}</div>`
+        }
+        images.innerHTML = fotosHTML
+    }
 }
 
 function clicked(n) {

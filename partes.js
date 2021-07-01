@@ -4,7 +4,7 @@ let partes = [{
                 url:'36823.jpg', alt: 'Governador'
             }]
         },{
-            nome: 'Ricardo G.', numero: '77733', partido: 'PMF', fotos: [{
+            nome: 'Renata G.', numero: '77733', partido: 'PMF', fotos: [{
                 url: '77733.jpg', alt: 'Governador'
             }]
         }] 
