@@ -11,7 +11,7 @@ let partes = [{
     },
     {
         cargo: 'PRESIDENTE', digitos: 2, candidatos: [{
-            nome: 'NICOLAS S.', numero: '66', partido: 'MTL', vice: 'Cesar S.', fotos: [{
+            nome: 'Nicolas S.', numero: '66', partido: 'MTL', vice: 'Cesar S.', fotos: [{
                 url: '66.jpg', legenda: 'Presidente'},{url: '66_2.jpg', legenda: 'Vice-Presidente', small: true
             }]
         },{
